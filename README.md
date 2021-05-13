@@ -17,3 +17,16 @@ git clone direccion_remota
 git add nombre_archivo
 git add .
 `
+## Realiza el cambio o un commit (head)
+`
+git commit -m "Proyecto inicial - 130521"
+`
+## Subir al repositorio remoto (github, gitlab, bitbucket)
+- relacionar el repositorio local con el repositorio remoto
+`
+git remote add origin direccion_remota
+`
+## Subir
+`
+git push origin master
+`

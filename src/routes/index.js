@@ -13,6 +13,7 @@ function urls(app){
     app.post("/usuario/:id", usuarioCon.modificar);
     app.post("/usuario/:id", usuarioCon.eliminar);
 
+    
 }
 
 module.exports = urls
