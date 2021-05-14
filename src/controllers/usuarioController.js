@@ -1,5 +1,7 @@
-
-
+const usuario = require("./../models/usuario");
+const producto = require("./../models/producto");
+usuario.sync();
+producto.sync();
 /**
  * Lista de Usuarios
  * @param {*} req datos de Cliente
