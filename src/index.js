@@ -1,16 +1,15 @@
-const express = require("express");
-let ejs = require('ejs');
+import express from "express";
 // import modulos locales
-const rutas = require("./routes/index");
-
+import rutas from "./routes/index";
+console.log("hola Mundo")
 const app = express();
 
 // rutas
 rutas(app);
 
 // habilitar vistas
-app.set('views', './src/views');
-app.set('view engine','ejs');
+app.set('views', './src/views'); // definir la ubicacion de nuestra vistas
+app.set('view engine','ejs'); // conf de motor de plantillas (pug, ejs, hbs)
 
 /*
 app.get("/", function(req, res){

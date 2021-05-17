@@ -1,6 +1,9 @@
-const usuario = require("./../models/usuario");
-const producto = require("./../models/producto");
-usuario.sync();
+//const usuario = require("./../models/usuario");
+//const producto = require("./../models/producto");
+// usuario.sync();
+// producto.sync();
+const { categoria, producto } = require("./../models/index")
+categoria.sync();
 producto.sync();
 /**
  * Lista de Usuarios
@@ -9,6 +12,7 @@ producto.sync();
  */
 function lista(req, res) {
     // renderizar una View   
+    //categoria.findAll()
     res.render("usuario/lista");
 }
 
